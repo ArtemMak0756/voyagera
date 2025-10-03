@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Voyagera</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&family=Boldonse&family=Coiny&family=Hanalei+Fill&family=Heebo:wght@100..900&family=Holtwood+One+SC&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Jacques+Francois+Shadow&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kavoon&family=Kumar+One&family=Kumbh+Sans:wght@100..900&family=Laila:wght@300;400;500;600;700&family=Lalezar&family=Limelight&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./images/title-logo.png">
+
+</head>
+<body>
+<header>
+  <div class="header__container">
+    <div class="header__logo">
+      <a href="index.html">
+        <h1>Voyagera</h1>
+      </a>
+    </div>
+
+    <div class="header__burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="header__navigation">
+      <div class="menu-close">&times;</div>
+      <a href="cookie.html">Polityka cookie</a>
+      <a href="responsible.html">Odpowiedzialna gra</a>
+      <a href="privacy.html">Polityka prywatności</a>
+      <a href="terms.html">Warunki korzystania</a>
+      <a class="header-button" href="contact.html">
+        <button>Kontakt</button>
+      </a>
+    </nav>
+  </div>
+</header>
+<div class="menu-overlay"></div>
+
+<main>
+  <div class="hero">
+    <div class="hero__container">
+      <h2>
+        Skontaktuj się z nami
+      </h2>
+    </div>
+  </div>
+  <section class="contact">
+    <div class="contact__container">
+      <p class="contact__subtitle">Podziel się swoimi oczekiwaniami – przygotujemy propozycję hoteli i kurortów z najlepszymi udogodnieniami oraz legalne gry dla wyjątkowych chwil relaksu.</p>
+
+      <div class="contact__content">
+        <form class="contact__form">
+          <div class="contact__form-row">
+            <input type="text" placeholder="Imię i nazwisko" required>
+            <input type="email" placeholder="E-mail" required>
+          </div>
+          <div class="contact__form-row">
+            <input type="tel" placeholder="Telefon" required>
+            <select required>
+              <option style="color: #6e6e6e" value="">Rodzaj wydarzenia</option>
+              <option>Rodzaj wyjazdu</option>
+              <option>Romantyczny pobyt</option>
+              <option>Weekend w hotelu</option>
+            </select>
+          </div>
+          <textarea placeholder="Krótko opisz pomysł, datę, liczbę gości, lokalizację..." required></textarea>
+
+          <label class="contact__checkbox">
+            <input type="checkbox" required> Wyrażam zgodę na kontakt i akceptuję <a href="privacy.html">Politykę prywatności</a>.
+          </label>
+          <label class="contact__checkbox">
+            <input type="checkbox"> Chcę otrzymywać informacje o nowościach i ofertach.
+          </label>
+
+          <div class="contact__buttons">
+            <button type="submit" class="btn btn-primary">Wyślij zapytanie</button>
+            <a href="tel:+48 123 321 125" class="btn btn-secondary">Zadzwoń: +48 654 456 789</a>
+          </div>
+        </form>
+
+        <div class="contact__info">
+          <h3>Dane kontaktowe</h3>
+          <p><strong>Telefon:</strong> +48 654 456 789</p>
+          <p><strong>E-mail:</strong> helpdesk@voyagera.com</p>
+          <p><strong>E-mail:</strong> contact@voyagera.com</p>
+          <p><strong>E-mail:</strong> admin@voyagera.com</p>
+          <p><strong>Adres:</strong> Czerniakowska 11, 00-453 Warszawa</p>
+          <p><strong>Godziny:</strong> Pn–Pt 09:00–18:00</p>
+          <!--                    <div class="contact__map">-->
+          <!--                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!..." width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
+          <!--                    </div>-->
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="footer__col footer__about">
+      <h2 class="footer__logo">Voyagera</h2>
+      <p>
+        Tworzymy niezapomniane wydarzenia i doświadczenia – z pasją,
+        precyzją i dbałością o każdy detal.
+      </p>
+    </div>
+    <div class="footer__col">
+      <h3>Nawigacja</h3>
+      <ul>
+        <li><a href="responsible.html">Odpowiedzialna gra</a></li>
+        <li><a href="terms.html">Warunki korzystania</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Firma</h3>
+      <ul>
+        <li><a href="privacy.html">Polityka prywatności</a></li>
+        <li><a href="cookie.html">Polityka cookies</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h3>Kontakt</h3>
+      <ul>
+        <li>+48 654 456 789</li>
+        <li><a href="mailto:helpdesk@trueconnectworld.com">helpdesk@voyagera.com</a></li>
+        <li><a href="mailto:contact@trueconnectworld.com">contact@voyagera.com</a></li>
+        <li><a href="mailto:admin@trueconnectworld.com">admin@voyagera.com</a></li>
+        <li>Czerniakowska 11,<br>00-453 Warszawa</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 Voyagera. All rights reserved</p>
+  </div>
+</footer>
+
+<div id="successPopup" class="popup">
+  <div class="popup__content">
+    <h3>Dziękujemy!</h3>
+    <p>Twoja wiadomość została pomyślnie wysłana. Skontaktujemy się z Tobą wkrótce.</p>
+    <button id="closePopup">Zamknij</button>
+  </div>
+</div>
+<div class="popup-overlay" id="countryPopup">
+  <div class="popup-box">
+    <h3>Państwa kraj: Polska?</h3>
+    <div class="popup-buttons">
+      <button class="popup-btn yes">Tak</button>
+      <button class="popup-btn no">Nie</button>
+    </div>
+  </div>
+</div>
+<div class="cookie-banner" id="cookieBanner">
+  <h3>Pliki cookies</h3>
+  <p>
+    Używamy niezbędnych plików cookies do działania serwisu oraz – za Twoją zgodą –
+    funkcjonalnych i analitycznych. Możesz zaakceptować wszystkie albo wybrać tylko niezbędne.
+  </p>
+  <div class="buttons">
+    <button class="accept" id="acceptCookies">Akceptuję</button>
+    <button class="necessary" id="necessaryCookies">Tylko niezbędne</button>
+  </div>
+  <div class="footer_form">
+    <span>Szanujemy Twoją prywatność</span>
+    <a style="text-decoration: underline" href="privacy.html">Polityka prywatności</a>
+  </div>
+</div>
+
+<script src="main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const popup = document.getElementById("successPopup");
+    const closeBtn = document.getElementById("closePopup");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      popup.style.display = "flex";
+
+      form.reset();
+    });
+
+    closeBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+
+    popup.addEventListener("click", (e) => {
+      if(e.target === popup) {
+        popup.style.display = "none";
+      }
+    });
+  });
+</script>
+</body>
+</html>
